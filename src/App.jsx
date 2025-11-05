@@ -9,6 +9,8 @@ import About from './Page/About'
 import Contact from './Page/Contac'
 import Login from './Page/Login'
 import Testi from './Page/Testi'
+import Logintwo from './Page/Logintwo'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,7 +20,8 @@ function App() {
 
       <Routes>
          <Route path='/' element = {<Home/>}/>
-         <Route path='/product' element = {<Login/>}/>
+         <Route path='/log' element = {<Login/>}/>
+         <Route path='/login' element ={<Logintwo/>}/>
          <Route path='/about' element = {<About/>}/>
          <Route path='/contact' element = {<Contact/>}/>
          <Route path='/testimonial' element = {<Testi/>}/>

@@ -28,9 +28,10 @@ const navItems = [
       { name: "About", link: "/about" },
       { name: "Contact", link: "/contact" },
       { name: "Testimonial", link: "/testimonial" },
+      { name: "Customer Profile", link: "/login" },
     ],
   },
-  { name: "Product", link: "/product" },
+  { name: "Product", link: "/log" },
 ];
 
 export default function Navbar() {
