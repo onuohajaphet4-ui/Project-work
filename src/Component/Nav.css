@@ -10,3 +10,12 @@
     gap: 50px;
    
 }
+
+.Link{
+     color: inherit;
+     text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
