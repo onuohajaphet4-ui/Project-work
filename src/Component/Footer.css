@@ -1,0 +1,59 @@
+.foot{
+    background-color:rgb(63, 63, 63);
+    padding-top: 5%;
+    padding-left: 9%;
+    padding-right: 9%;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    color: white;
+    
+    
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    li{
+        list-style: none;
+        padding: 2px;
+        padding-bottom: 20px;
+    }
+}
+
+li:hover{
+    text-decoration: underline;
+    color:rgb(101, 101, 241);
+}
+
+.icon{
+    text-align: center;
+    padding-top: 25px;
+}
+.icon a{
+    text-decoration: none;
+    color: white;
+}
+.icon ion-icon{
+    
+    color: white;
+    font-size: 30px;
+    padding: 7px;
+    text-align: center;
+}
+
+
+.icon ion-icon:hover{
+    color: rgb(101, 101, 241);
+}
+
+@media(max-width:600px){
+    .foot{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}

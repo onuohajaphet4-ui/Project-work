@@ -1,11 +1,15 @@
 import React from 'react'
-// import './Product.css'
+import {motion} from 'framer-motion'
 const Product = () => {
   return (
-    <div className='pro'>
-      Testimonial Section
-      
-    </div>
+     <motion.div
+         initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+          Testimonial Section
+    
+        </motion.div>
   )
 }
 

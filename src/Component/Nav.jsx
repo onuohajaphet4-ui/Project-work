@@ -25,10 +25,11 @@ const navItems = [
   {
     name: "Company",
     submenu: [
-      { name: "About", link: "/about" },
-      { name: "Contact", link: "/contact" },
+      { name: "About Us", link: "/about" },
       { name: "Testimonial", link: "/testimonial" },
       { name: "Customer Profile", link: "/login" },
+      { name: "Contact Us", link: "/contact" },
+      { name: "Product", link: "/product" },
     ],
   },
   { name: "Product", link: "/log" },
@@ -57,7 +58,6 @@ export default function Navbar() {
     setOpenCompany(!openCompany);
   };
 
-  // Desktop menu items
   const menuId = "company-menu";
 
   const drawer = (
@@ -111,23 +111,46 @@ export default function Navbar() {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBar component="nav" position="static" sx={{ bgcolor: "black" }}>
-        <Toolbar>
+        <Toolbar
+          sx={{
+            justifyContent: { xs: "space-between", sm: "flex-start" },
+          }}
+        >
+          {/* Logo always visible on small screen, hidden on large */}
+          <Typography
+            variant="h6"
+            sx={{
+              display: { xs: "block", sm: "none" },
+            }}
+          >
+            JP Gadget
+          </Typography>
+
+{/* Hamburger icon - on the right for small screens */}
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            edge="start"
+            edge="end"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{
+              display: { xs: "block", sm: "none" },
+            }}
           >
             <MenuIcon />
           </IconButton>
-          <Typography
 
-variant="h6"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          {/* Logo for large screen */}
+          <Typography
+            variant="h6"
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+            }}
           >
-            JP  Gadget
+            JP Gadget
           </Typography>
+
+          {/* Desktop links */}
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) =>
               item.submenu ? (
@@ -185,8 +208,10 @@ variant="h6"
           ModalProps={{ keepMounted: true }}
           sx={{
             display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
-            color:'red'
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
