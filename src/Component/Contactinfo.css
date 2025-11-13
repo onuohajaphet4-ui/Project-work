@@ -1,0 +1,154 @@
+
+.cho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f9f9f9;
+}
+.cho h1{
+    font-size:3.5em;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+.cho p{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #1e0202;
+}
+/* Layout for two boxes (left + right) */
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two equal boxes */
+  gap: 25px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  
+}
+
+/* Main box styles */
+.box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Each sub-box inside a box */
+.sub-box {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sub-box:hover {
+  background-color: #e9f7f4;
+}
+
+/* Icons */
+.icon {
+  font-size: 40px;
+  color: lightblue;
+  margin-bottom: 10px;
+}
+
+.arrow-icon {
+  font-size: 18px;
+  margin-left: 5px;
+  color: lightblue;
+}
+
+.small-icon {
+  font-size: 4.9em;
+  margin-right: 5px;
+  color: lightblue;
+
+  
+}
+
+/* Typography */
+h2 {
+  color: #333;
+  margin: 10px 0;
+}
+
+p {
+  color:black;
+  line-height: 1.2;
+  margin: 5px 0;
+  font-size: 1.6em;
+}
+
+.cake p{
+  font-size: 1.2em;
+  color: lightblue;
+}
+/* Link styling */
+a {
+  color: lightblue;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Contact info row */
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #222;
+  margin: 10px 0;
+}
+.box2{
+  background-color: white;
+  border-radius: 30px;
+  
+}
+.icon2 p{
+  font-size: 1.2em;
+}
+.icon2 h1{
+font-size: 1.1em;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr; /* stack boxes vertically */
+
+    
+  }
+
+  .box{
+    width: 90%;
+  }
+
+  .contacttt{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+}
+
+
+
+           
