@@ -12,7 +12,10 @@ import Testi from './Page/Testi'
 import Logintwo from './Page/Logintwo'
 import Product from './Page/Product'
 import Footer from './Component/Footer'
-import Branch from './Component/Branch'
+
+
+
+
 function App() {
   const [count, setCount] = useState(0)
 
