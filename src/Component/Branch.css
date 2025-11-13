@@ -1,0 +1,72 @@
+.bran-input {
+  display: block;
+  width: 80%;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.branch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  gap: 20px;
+}
+
+.bu{
+     background: #f9f9f9;
+     color: black;
+               padding: 18px 40px;
+               border-radius: 20px;
+               cursor: pointer ;
+               border: none;
+               margin-top:23px;
+              border: 1px solid #ddd;
+              font-weight:bold;
+}
+
+.bu:hover{
+    background-color: black;
+    color: white;
+}
+.branch1 {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding-top: 20px;
+  
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.branch1:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.bra-h1 {
+  text-align: center;
+  font-size: 34px;
+  color: #333;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bra-h3 a {
+  text-decoration: none;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.bra-h3{
+    background-color:black;
+    padding: 9%;
+    border-radius: 0 20px;
+    margin-top: 10px;
+    color: white;
+}

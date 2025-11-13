@@ -1,0 +1,57 @@
+.statt{
+    p{
+        padding-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        color: #3f3d3d;
+        text-transform: uppercase;
+    }
+    h2{
+        color: skyblue;
+        padding-top: 30px;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+}
+
+.statts{
+    text-align: center;
+    flex-wrap: wrap;
+    display:flex;
+    gap: 110px;
+    justify-content: center;
+}
+
+.mile{
+    text-align: center;
+    width: 100%;
+
+
+    h5{
+        padding-top: 90px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        color: #3f3d3d;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    h1{
+        text-align: center;
+        color: #3f3d3d;
+        font-size: 50px;
+        padding-top: 40px;
+    }
+}
+
+@media(max-width: 600px){
+    .stat{
+        h2{
+            font-size: 4.3rem;
+        }
+    }
+
+     .statts{
+        gap: 20px;
+    }
+}

@@ -12,7 +12,7 @@ import Testi from './Page/Testi'
 import Logintwo from './Page/Logintwo'
 import Product from './Page/Product'
 import Footer from './Component/Footer'
-
+import Branch from './Component/Branch'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -27,6 +27,7 @@ function App() {
          <Route path='/about' element = {<About/>}/>
          <Route path='/contact' element = {<Contact/>}/>
          <Route path='/testimonial' element = {<Testi/>}/>
+         <Route path='/branch' element = {<Branch/>}/>
          <Route path='/product' element = {<Product/>} />
          
       </Routes>

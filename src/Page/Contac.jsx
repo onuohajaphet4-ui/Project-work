@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import Branch from '../Component/Branch'
 const Testi = () => {
   return (
      <motion.div
@@ -7,8 +8,8 @@ const Testi = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-         Contact Us Section
-    
+          
+         <Branch/>
         </motion.div>
   )
 }

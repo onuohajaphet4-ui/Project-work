@@ -18,6 +18,9 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
+
+
+
 const drawerWidth = 240;
 
 const navItems = [
@@ -33,6 +36,7 @@ const navItems = [
     ],
   },
   { name: "Product", link: "/log" },
+  { name: "Sign up", link: "/log" },
 ];
 
 export default function Navbar() {
@@ -40,7 +44,7 @@ export default function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [openCompany, setOpenCompany] = useState(false);
 
-  // Desktop dropdown open
+
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -48,12 +52,12 @@ export default function Navbar() {
     setAnchorEl(null);
   };
 
-  // Mobile drawer toggle
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  // Company collapse toggle (mobile)
+  
   const handleCompanyClick = () => {
     setOpenCompany(!openCompany);
   };
@@ -116,7 +120,7 @@ export default function Navbar() {
             justifyContent: { xs: "space-between", sm: "flex-start" },
           }}
         >
-          {/* Logo always visible on small screen, hidden on large */}
+          
           <Typography
             variant="h6"
             sx={{
@@ -126,7 +130,7 @@ export default function Navbar() {
             JP Gadget
           </Typography>
 
-{/* Hamburger icon - on the right for small screens */}
+
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -139,7 +143,7 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
 
-          {/* Logo for large screen */}
+          
           <Typography
             variant="h6"
             sx={{
@@ -150,7 +154,7 @@ export default function Navbar() {
             JP Gadget
           </Typography>
 
-          {/* Desktop links */}
+          
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) =>
               item.submenu ? (
@@ -199,7 +203,7 @@ export default function Navbar() {
         </Toolbar>
       </AppBar>
 
-      {/* Drawer for small screen */}
+    
       <Box component="nav">
         <Drawer
           variant="temporary"
