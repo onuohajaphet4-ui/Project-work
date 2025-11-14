@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import {Route,Routes} from 'react-router-dom'
 import  Nav from './Component/Nav'
@@ -12,6 +11,9 @@ import Testi from './Page/Testi'
 import Logintwo from './Page/Logintwo'
 import Product from './Page/Product'
 import Footer from './Component/Footer'
+import Register from './Component/Register'
+import ViewUsers from './Page/ViewUsers'
+import CustomerProfile from './Page/CustomerProfile'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +30,9 @@ function App() {
          <Route path='/contact' element = {<Contact/>}/>
          <Route path='/testimonial' element = {<Testi/>}/>
          <Route path='/product' element = {<Product/>} />
+          <Route path='/Register' element = {<Register/>} />
+          <Route path='/CustomerProfile' element = {<CustomerProfile/>} />
+          <Route path="/viewusers/:id" element={<ViewUsers />} />
          
       </Routes>
 
