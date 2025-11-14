@@ -88,8 +88,8 @@ const Branch = () => {
               style={{
                 transform: "scale(1.8)",
                 color: "#e63946",
-                marginBottom: "20px",
-                marginTop: "20px",
+                marginBottom: "10px",
+                marginTop: "10px",
                 fontSize:'25px'
               }}
             ></ion-icon>
@@ -137,20 +137,6 @@ textAlign: "center",
           <button
             onClick={loadMore}
             className="bu"
-            // style={{
-            //   background: "#f9f9f9",
-            //   color: "black",
-            //   padding: "18px 40px",
-            //   borderRadius: "20px",
-            //   cursor: "pointer",
-            //   border: "none",
-            //   marginTop:'23px',
-            //  border: '1px solid #ddd',
-            //  fontWeight:'bold'
-
-
-            // }}
-
             
           >
             Load More

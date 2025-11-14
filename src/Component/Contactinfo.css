@@ -1,69 +1,163 @@
-
-.cho{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #f9f9f9;
-}
-.cho h1{
-    font-size:3.5em;
-    line-height: 1.5em;
+.main-h1{
+  color: #272626;
+  padding-top: 4%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
 }
-.cho p{
-    font-size: 1.5em;
-    line-height: 1.2em;
-    color: #1e0202;
+
+.main-p{
+     padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333232;
+    font-weight: bold;
+    text-align: center;
 }
-/* Layout for two boxes (left + right) */
-.contact-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two equal boxes */
-  gap: 25px;
-  max-width: 1100px;
-  margin: 60px auto;
-  padding-bottom: 20px;
-  box-sizing: border-box;
+
+.conta{
+    display: flex;
+    /* padding: 5%; */
+    gap: 50px;
+    flex-wrap: wrap;
+    
+}
+
+.conta1{
+    width: 40%;
+    padding-left: 6%;
+
+
+}
+
+.con-inf{
+    margin-top: 10px;
+    background-color:white;
+    border-radius: 20px;
+    height: 25vh;
+    padding-top: 6%;
+    box-shadow: 0 4px 12px grey;
+    padding-left: 4% ;
+    
+
+   .con-info-h2{
+        color: rgb(66, 65, 65);
+        padding-top: 1%;
+        padding-right: 4%;
+    }
+
+    .con-info-p{
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 17px;
+          font-weight:100;
+          color: #313030;
+          padding-top: 5%;
+          padding-right: 5%;
+    }
+
+    
+}
+
+.con-info{
+    margin-top: 20px;
+    
+    border-radius: 20px;
+    height: 40vh;
+    padding-top: 2%;
+    box-shadow:0 4px 12px grey;
+    padding-left: 4% ;
+
+    .con-info-h2{
+        color: rgb(66, 65, 65);
+        padding-top: 3%;
+        /* padding-left: 4%; */
+        padding-right: 4%;
+    }
+
+   .con-info-p{
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 17px;
+          font-weight:100;
+          color: #313030;
+          padding-top: 5%;
+          padding-right: 5%;
+    }
+
+    .con-info-h6{
+         color: skyblue;
+        padding-top: 5%;
+        padding-left: 4%;
+        padding-right: 5%;
+        font-size:15px;
+    }
+    
+}
+
+
+
+.conta2{
+    
+    width: 40%;
+    border-radius: 20px;
+    height: 67vh;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    box-shadow:0 4px 12px grey;
+
+    .con-info-h{
+         color: rgb(66, 65, 65);
+        
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .con-info-h5{
+          color: rgb(66, 65, 65);
+        padding-top: 3%;
+        /* padding-left: 1%; */
+        padding-right: 4%;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .con-info-9{
+         color: skyblue;
+        padding-top: 2%;
+        padding-left: 4%;
+        padding-right: 5%;
+        font-size:15px;
+        padding-bottom: 7%;
+    }
+}
+
+.grey{
+    background-color: rgba(218, 215, 215, 0.884);
+    height: 58vh;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 10px;
+    padding-bottom: 2%;
+}
+
+
+
+
+.icon {
+  font-size: 35px;
+  color: lightblue;
   
 }
 
-/* Main box styles */
-.box {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-
-}
-
-.box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-/* Each sub-box inside a box */
-.sub-box {
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.sub-box:hover {
-  background-color: #e9f7f4;
-}
-
-/* Icons */
-.icon {
-  font-size: 40px;
+.icono{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 25px;
   color: lightblue;
-  margin-bottom: 10px;
 }
 
 .arrow-icon {
@@ -72,82 +166,55 @@
   color: lightblue;
 }
 
-.small-icon {
-  font-size: 4.9em;
-  margin-right: 5px;
-  color: lightblue;
+@media (max-width:600px){
 
-  
-}
+  .main-h1{
+    font-size: 40px;
+    padding-top: 30px;
+  }
+    .conta1{
+        width:90%;
+       padding-left: 5%;
+       
+    }
 
-/* Typography */
-h2 {
-  color: #333;
-  margin: 10px 0;
-}
+    .icono{
+      padding-top: 24px;
+    }
 
-p {
-  color:black;
-  line-height: 1.2;
-  margin: 5px 0;
-  font-size: 1.6em;
-}
+    .conta2{
+        width:90%;
+        height: 68vh;
+        margin-left: 5%;
 
-.cake p{
-  font-size: 1.2em;
-  color: lightblue;
-}
-/* Link styling */
-a {
-  color: lightblue;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-}
+        .con-info-h5{
+          color: rgb(66, 65, 65);
+        padding-top: 8%;
+        }
 
-a:hover {
-  text-decoration: none;
-}
-
-/* Contact info row */
-.contact-info {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  color: #222;
-  margin: 10px 0;
-}
-.box2{
-  background-color: white;
-  border-radius: 30px;
-  
-}
-.icon2 p{
-  font-size: 1.2em;
-}
-.icon2 h1{
-font-size: 1.1em;
-}
-
-/* Responsive for mobile */
-@media (max-width: 768px) {
-  .contact-section {
-    grid-template-columns: 1fr; /* stack boxes vertically */
-
+         .con-info-9{
+        
+        padding-top: 4%;
+        padding-bottom: 2%;
+    }
+        
     
-  }
+    }
 
-  .box{
-    width: 90%;
-  }
+    .con-inf{
+        height:23vh ;
+    }
 
-  .contacttt{
-  margin-left: 5%;
-  margin-right: 5%;
+    .con-info{
+        height:38vh ;
+    }
+
+    .grey{
+         height: 54vh;
+    }
 }
 
-}
+
 
 
 
