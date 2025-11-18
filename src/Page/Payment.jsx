@@ -49,7 +49,7 @@ const PaymentModal = () => {
             Cancel
           </button>
 
-          <a href className="proceed-btn" onClick={pay}>
+          <a href="https://paystack.shop/pay/2kat7du-v3" className="proceed-btn" >
             Proceed to OPay
           </a>
         </div>

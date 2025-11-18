@@ -134,4 +134,8 @@
         font-size: 1.3rem;
         padding: 5px 5px;
     }
+
+    .slider-container{
+        margin-bottom: 95px;
+    }
 }
