@@ -39,7 +39,7 @@ const Contactinfo = () => {
             </div>
 
             <div className="conta2">
-              <a href="#"><ion-icon name="call-outline" style={{color:'lightblue' , fontSize: '30px' , paddingLeft:'15px' }}></ion-icon></a>
+              <a href="#"><ion-icon name="call-outline" style={{color:'#2196f3' , fontSize: '30px' , paddingLeft:'15px' }}></ion-icon></a>
                 <h2 className='con-info-h'>Contact Details</h2>
                <div className="grey">
                <a href="tel:=2348145990289" style={{textDecoration:'none'}}>
@@ -53,7 +53,7 @@ const Contactinfo = () => {
                  <h6 className='con-info-9'>09069358553</h6>
                  <a href="https://wa.me/2347074293026" style={{textDecoration:'none'}}>
                     <div className="icon" style={{display:'flex'}}>
-                   <a href="#"><ion-icon name="logo-whatsApp" style={{color:'lightblue'}}></ion-icon></a>
+                   <a href="#"><ion-icon name="logo-whatsApp" style={{color:'#2196f3'}}></ion-icon></a>
                    < h5 className='con-info-h5'>Whatsapp</h5>
                    </div>
                   </a>

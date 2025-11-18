@@ -9,13 +9,13 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
-// Icons
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import  video from '../assets/video.mp4'
+
 
 const RegistrationScreen = () => {
   const navigate = useNavigate();
@@ -57,8 +57,7 @@ const RegistrationScreen = () => {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        backgroundImage:
-          "url('/pngtree-gadgets-in-a-striking-3d-dim-environment-image_3859890 (2).jpg')",
+        // backgroundColor:'white',
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
@@ -74,6 +73,24 @@ const RegistrationScreen = () => {
         },
       }}
     >
+
+       <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                zIndex: -1,
+              }}
+            >
+              <source src={video} type="video/mp4" />
+            </video>
       <Box
         component="form"
         onSubmit={handleRegister}
@@ -84,7 +101,12 @@ const RegistrationScreen = () => {
           color: "#fff",
           display: "flex",
           flexDirection: "column",
+          padding:'20px',
           gap: 2,
+           background: "rgba(43, 41, 41, 0.52)",
+            backdropFilter: "blur(10px)",
+            borderRadius:'10px',
+             boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)",
         }}
       >
         <Typography
@@ -246,13 +268,19 @@ const RegistrationScreen = () => {
           )}
         </Button>
       </Box>
+
+      <div className="iconn">
+                       <a href="https://wa.me/2347074293026"><ion-icon name="logo-whatsApp" style={{color:'black'}}></ion-icon></a>
+                       <hr />
+                        <a href="tel:=2348145990289"><ion-icon name="call-outline" style={{color:'black' }}></ion-icon></a>
+         </div>
     </Box>
   );
 };
 
 const textFieldStyle = {
   "& .MuiOutlinedInput-root": {
-    height: "55px",              // increase the height
+    height: "55px",             
     backgroundColor: "rgba(255,255,255,0.08)", 
     borderRadius: "12px",
     "& fieldset": { borderColor: "rgba(255,255,255,0.3)" },
@@ -261,8 +289,8 @@ const textFieldStyle = {
   },
   "& .MuiInputBase-input": {
     color: "#fff",
-    padding: "0 14px",           // keep text nicely inside
-    height: "100%",               // make text vertically centered
+    padding: "0 14px",           
+    height: "100%",              
   },
   "& .MuiInputLabel-root": { color: "rgba(255,255,255,0.7)" },
 };

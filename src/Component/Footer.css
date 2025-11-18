@@ -8,8 +8,15 @@
     gap: 140px;
     color: white;
     
+  
     
 }
+
+.first{
+    span{
+        color:'black'
+    }
+  }
 
 .second{
     display: flex;

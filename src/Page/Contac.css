@@ -76,6 +76,7 @@
     justify-content: space-around;
     gap: 10px;
     padding-top: 5%;
+    padding-bottom: 3%;
    
 
     background-color: lightblue;
@@ -110,6 +111,10 @@
         border: 1px grey solid;
     }
 
+    input:hover{
+            border: solid 1px #2196f3;
+        }
+
     h4{
         padding-top: 20px;
         text-align: center;
@@ -128,7 +133,12 @@
 
         input{
             width: 95%;
-            height: 30vh;
+            height: 20vh;
+           
+        }
+
+        input:hover{
+            border: solid 1px #2196f3;
         }
 
         label{
@@ -176,23 +186,103 @@
     }
 }
 
-.di{
-   
-}
 
-.mess{
-    
-}
 
 @media(max-width:600px){
 
     .contact-us{
         flex-direction: column;
+        padding-left:5px;
+        padding-right: 5px;
     }
 
-    .formm{
+   .formm{
+    height: auto;
+    background-color:white;
+    padding: 5%;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 30px;
+    width: 80%;
+    border: 1px grey solid;
+    border-radius: 20px;
+    padding-left: 10px;
 
+
+  
+
+    input{
+        border-radius: 10px;
+        padding: 13px;
+        border: none;
+        width: 90%;
+        border: 1px grey solid;
+        margin-left: 10px;
     }
+
+    input:hover{
+            border: solid 1px #2196f3;
+        }
+
+    h4{
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    span{
+        color:#2196f3;
+        text-decoration: underline;
+    }
+
+    .mess{
+        margin-left: 10px;
+        margin-top: 10px;
+        
+
+        input{
+            width: 90%;
+            height: 20vh;
+           color: rgba(43, 41, 41, 0.404);
+        }
+
+        input:hover{
+            border: solid 1px #2196f3;
+        }
+
+        label{
+            padding-bottom: 10px;
+           
+        }
+
+       
+    }
+
+    button{
+        background-color: #2196f3;
+        margin-top: 20px;
+        width: 80%;
+        margin-left: 23px;
+        padding: 10px;
+        border: 1px solid ;
+        border-radius: 20px;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.dd{
+    display: none;
+}
+
+.ddd{
+     display: none;
+}
+
+.dddd{
+    display: none;
+}
+
 }
 
 

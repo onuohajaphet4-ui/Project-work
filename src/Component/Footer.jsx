@@ -6,10 +6,10 @@ const Footer = () => {
     <div >
      <div className='foot'>
       <div className="first">
-         <span>JP Gadget</span> Enterprise
+         <span>ZYNOX  STORE</span> Enterprise
 
          <p style={{paddingTop:'10px'}}>
-           Jp Gadget  Enterprise is building Africa’s leading Technology sociaty by integrating Tech Gadget into the everday life and association of our Customer, unlocking  the best of the best  for individuals and businesses.
+           ZYNOX  STORE  Enterprise is building Africa’s leading Technology sociaty by integrating Tech Gadget into the everday life and association of our Customer, unlocking  the best of the best  for individuals and businesses.
          </p>
 
           <div className="icon">
@@ -47,7 +47,7 @@ const Footer = () => {
          </div>
       </div>
         </div>
-       <footer style={{backgroundColor:'rgb(63, 63, 63)', color:'white' ,textAlign:'center', fontSize:'13px', padding:'2%'}}>Copyright © 2025 Jp Gadget.com, Inc, a division of IXL Learning • All Rights Reserved.</footer>
+       <footer style={{backgroundColor:'rgb(63, 63, 63)', color:'white' ,textAlign:'center', fontSize:'13px', padding:'2%'}}>Copyright © 2025 ZYNOX  STORE.com, Inc, a division of IXL Learning • All Rights Reserved.</footer>
     </div>
   )
 }

@@ -25,7 +25,7 @@ const Miles = () => {
                />
             </h2>
 
-            <p>Active Customers </p>
+            <p>Offices Across Nigeria </p>
           </div>
 
           <div className="statt">

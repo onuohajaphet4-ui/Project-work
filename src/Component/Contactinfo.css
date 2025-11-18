@@ -87,7 +87,7 @@
     }
 
     .con-info-h6{
-         color: skyblue;
+         color:#2196f3;
         padding-top: 5%;
         padding-left: 4%;
         padding-right: 5%;
@@ -124,7 +124,7 @@
     }
 
     .con-info-9{
-         color: skyblue;
+         color: #2196f3;
         padding-top: 2%;
         padding-left: 4%;
         padding-right: 5%;
@@ -148,7 +148,7 @@
 
 .icon {
   font-size: 35px;
-  color: lightblue;
+  color: #2196f3;
   
 }
 
@@ -157,13 +157,13 @@
   padding-left: 10px;
   padding-right: 10px;
   font-size: 25px;
-  color: lightblue;
+  color:#2196f3;
 }
 
 .arrow-icon {
   font-size: 18px;
   margin-left: 5px;
-  color: lightblue;
+  color:#2196f3;
 }
 
 @media (max-width:600px){

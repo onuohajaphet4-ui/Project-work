@@ -17,11 +17,11 @@ const Home = () => {
 
            <div className="free">
                 <h3>
-                  Claim your free  gift from Jp Gadget
+                  Claim your free  gift from ZYNOX STORE
                 </h3>
                <div className="free2">
                 <p >
-                 We are celebrating our amazing customer with exclusive free gifts - our way of saying thanks for being par of jp gadget family
+                 We are celebrating our amazing customer with exclusive free gifts - our way of saying thanks for being par of ZYNOX STORE family
                 </p>
 
                 <Link to='/login' style={{textDecoration:'none'}}><button>Click</button></Link>
@@ -52,7 +52,7 @@ const Home = () => {
                      <img src={laptop} alt="" />
                    </div>
 
-                     <Link to='/product'><button>Click to shop</button></Link>
+                     <Link to='/product2'><button>Click to shop</button></Link>
                 </div>
 
 
@@ -64,7 +64,7 @@ const Home = () => {
                      <img src={smart} alt="" />
                    </div>
 
-                    <Link to='/product'><button>Click to shop</button></Link>
+                    <Link to='/product3'><button>Click to shop</button></Link>
                 </div>
 
                  
@@ -74,19 +74,31 @@ const Home = () => {
               <hr  style={{ margin:'50px'}}/>
              <div className="home-end">
                <div className="div1">
+                 <motion.div
+                  initial={{ opacity: 0, x: -50, scale: 0.95 }}
+                  animate={{ opacity: 1, x: 0, scale: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  >
                   <h2>From Passion to Progress — Our Tech Story</h2>
 
                   <p>What started as a passion for modern gadgets has grown into a trusted brand serving customers nationwide. We’re committed to quality, innovation, and building long-lasting relationships through technology.</p>
 
                  <Link to='/about'> <button>Read our Story</button></Link>
+                 </motion.div>
                </div>
 
                <div className="div2">
+                 <motion.div
+                  initial={{ opacity: 0, x: 50, scale: 0.95 }}
+                  animate={{ opacity: 1, x: 0, scale: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  >
                  <h2>Connect with Us Across All Our Branches around the country</h2>
 
                  <p>We’re closer than you think. Visit any of our branches near you to explore our latest gadgets, get expert advice, or enjoy personalized support. Our team is always ready to assist — wherever you are.</p>
 
                 <Link to='/branch'><button>Find a Branch</button></Link> 
+                </motion.div>
                </div>
              </div>
 

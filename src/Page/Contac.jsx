@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import '../Page/Contac.css'
-import { i } from 'framer-motion/client'
+// import { i } from 'framer-motion/client'
 import img from '../assets/hero img.webp'
 import Contactinfo from '../Component/Contactinfo.jsx'
 import Branch from '../Component/Branch.jsx'

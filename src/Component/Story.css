@@ -14,10 +14,12 @@
     h1{
             font-size: 70px;
              color: #272727;
+             font-weight: 100;
             /* font-weight:bold; */
             word-spacing: -10px;
             line-height: 75px;
             padding-top: 1.5%;
+            
             font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
@@ -27,6 +29,7 @@
         font-weight: 700;
         color: #3f3d3d;
         line-height: 25px;
+         color: #272727;
         
     }
 }
@@ -40,7 +43,7 @@
         text-transform: uppercase;
     }
     h2{
-        color: skyblue;
+        color:#2196f3;
         padding-top: 30px;
         font-size: 6rem;
         font-weight: bold;

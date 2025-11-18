@@ -32,11 +32,11 @@ const navItems = [
       { name: "Testimonial", link: "/testimonial" },
       { name: "Customer Profile", link: "/login" },
       { name: "Contact Us", link: "/contact" },
-      { name: "Product", link: "/product" },
+      // { name: "Product", link: "/product" },
     ],
   },
   { name: "Product", link: "/log" },
-  { name: "Sign up", link: "/log" },
+  { name: "Sign up", link: "/sign" },
 ];
 
 export default function Navbar() {
@@ -127,7 +127,7 @@ export default function Navbar() {
               display: { xs: "block", sm: "none" },
             }}
           >
-            JP Gadget
+          ZYNOX
           </Typography>
 
 
@@ -151,7 +151,7 @@ export default function Navbar() {
               display: { xs: "none", sm: "block" },
             }}
           >
-            JP Gadget
+            ZYNOX STORE
           </Typography>
 
           

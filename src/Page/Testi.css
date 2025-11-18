@@ -1,0 +1,148 @@
+.testi-container {
+  width: 100%;
+  position: relative;
+  background: #f5f5f5;
+  
+  
+
+  h1{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+}
+
+.japhet{
+     padding-top: 70px;
+     padding-left: 20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.row{
+    overflow: hidden;
+  
+}
+
+.testi-title {
+  text-align: center;
+  font-size:30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-left: 25%;
+  padding-right: 30%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.testi-wrapper {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+ 
+}
+
+.jjj{
+    /* display: none; */
+    padding-bottom: 40px;
+    color: #f5f5f5; ;
+}
+
+.word{
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+     margin-left: 100px;
+     margin-right: 100px;
+     padding-top: 30px;
+     border-radius: 20px;
+     margin-top: 30px;
+    
+}
+.left-row .testi-wrapper{
+    animation-name: slideLeft;
+}
+
+.right-row .testi-wrapper{
+    animation-name: slideRightt;
+}
+
+.testi-container:hover .testi-wrapper,
+.testi-container:active .testi-wrapper{
+    animation-play-state: paused ;
+}
+
+@keyframes slideLeft{
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+
+@keyframes slideRightt{
+    0% {transform: translateX(-50%);}
+    100% {transform: translateX(0);}
+}
+
+.testi-card {
+  background: white;
+  padding: 2%;
+  max-width: 20%;
+  min-width: 280px;
+  /* height: 30vh; */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  word-wrap: break-word;
+}
+
+.testi-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+.testi-stars {
+  margin-bottom: 10px;
+  color: gold;
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+.testi-text {
+    padding-top: 70px;
+  font-size: 23px;
+  color: #333;
+  
+}
+
+@media(max-width:600px){
+    .word{
+         margin-left: 10px;
+     margin-right: 10px;
+    }
+
+    .testi-card{
+        max-width: 80%;
+    }
+
+    .testi-container{
+        h1{
+            font-size: 20px;
+        }
+
+        
+    }
+
+    .testi-title{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+   
+
+
+}

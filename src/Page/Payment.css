@@ -1,0 +1,60 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-box {
+  background: white;
+  padding: 25px;
+  width: 85%;
+  max-width: 360px;
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 0.25s ease;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.349);
+}
+
+.modal-box h2 {
+  margin-bottom: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn,
+.proceed-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  background: #eee;
+}
+
+.proceed-btn {
+  background: #1a73e8;
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -11,6 +11,8 @@ import {
 import { EmojiEvents, Visibility, Delete } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import {motion} from 'framer-motion'
+import {Link}  from 'react-router-dom'
 
 const UsersList = () => {
   const navigate = useNavigate();
@@ -34,6 +36,17 @@ const UsersList = () => {
     };
     fetchUsers();
   }, []);
+
+   const [user , setUser] = useState(null)
+
+
+   useEffect(() => {
+      const savedUser  = 
+      localStorage.getItem('user')
+      if (savedUser){
+        setUser(JSON.parse(savedUser))
+      }
+    }, [])
 
   const deleteUser = async (_id) => {
     const confirm = window.confirm("Are you sure you want to delete this user?");
@@ -60,6 +73,13 @@ const UsersList = () => {
         pt: 6,
       }}
     >
+
+      <motion.div
+               initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+
       <Paper
         elevation={12}
         sx={{
@@ -71,6 +91,25 @@ const UsersList = () => {
           boxShadow: "0 8px 30px rgba(0,0,0,0.5)",
         }}
       >
+
+
+         <div className="product-oo">
+      
+          {user ? (
+            <span >
+              Welcome, <b>{user.firstName} {user.lastName} </b> 
+            </span>
+          ) : (
+            <span style={{ color: "black", marginLeft: "20px" ,fontSize:'10px'}}>
+              Welcome, Guest
+            </span>
+          )}
+
+        
+           
+      
+    </div>
+
         {/* Header */}
         <Box
           sx={{
@@ -152,6 +191,14 @@ const UsersList = () => {
           </Stack>
         )}
       </Paper>
+
+       <div className="iconn">
+                       <a href="https://wa.me/2347074293026"><ion-icon name="logo-whatsApp" style={{color:'black'}}></ion-icon></a>
+                       <hr />
+                        <a href="tel:=2348145990289"><ion-icon name="call-outline" style={{color:'black' }}></ion-icon></a>
+         </div>
+
+    </motion.div>
     </Box>
   );
 };

@@ -5,6 +5,7 @@ import Story from '../Component/Story'
 import Miles from '../Component/Miles'
 import about1 from '../assets/about-con1.svg'
 import about2 from '../assets/about-con2.svg'
+import {Link} from 'react-router-dom'
 import { IoBulb, IoShieldCheckmark, IoLeaf, IoPeople, IoStar, IoHeart } from "react-icons/io5";
 const Testi = () => {
   return (
@@ -110,6 +111,8 @@ const Testi = () => {
               </div>
 
 
+                
+
               <div className="identity-card">
 
                 < IoPeople size={40}/>
@@ -184,7 +187,7 @@ const Testi = () => {
                 </p>
 
                 <button>
-                   Call Now
+                <a href="tel:=2349069358552" style={{textDecoration:'none' , color :'inherit'}}>   Call Now</a>
                 </button>
               </div>
 
@@ -198,7 +201,7 @@ const Testi = () => {
                 </p>
 
                 <button>
-                   Locate A Branch
+                 <Link to='/branch' style={{ textDecoration:'none' , color :'inherit'}}>  Locate A Branch </Link>
                 </button>
               </div>
            </div>

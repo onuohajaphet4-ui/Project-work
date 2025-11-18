@@ -1,6 +1,31 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Form = () => {
+
+  const form = useRef () 
+
+  const sendEmail = (e) => {
+    e.preventDefault() ;
+
+    emailjs 
+    .sendForm(
+      'service_f4ymrpo',
+      'template_ckwm5wk',
+      form.current,
+       'yQcrPxg3PWJmvSr8a'
+    )
+    .then(
+      (result) => {
+        console.log (result.text)
+        alert('Your Meassage has been sent and will be review, expect our reply soon')
+      },
+      (error) => {
+        console.log(error.text)
+        alert('Error sending message')
+      }
+    )
+  }
   return (
     <div>
        <div className="contact-us">
@@ -16,25 +41,25 @@ const Form = () => {
 
 
            <div className="di">
-              <form action="" className='formm'>
+              <form action="" className='formm' ref={form} onSubmit={sendEmail}>
                 <div className="d">
-                  <label htmlFor="">Name</label>
+                  <label htmlFor="" className='dddd'>Name</label>
 
 
                   <label htmlFor="" className='dd'>Email</label>
                 </div>
                 <div className="diii">
                   
-                 <input type="text" placeholder='Enter Name' /> 
+                 <input type="text" name='name' placeholder='Enter Name' required   /> 
                 
                    
                   <br /> <br />
-                  <input type="email" placeholder='Enter Email' /> 
+                  <input type="email" name='email' placeholder='Enter Email' required /> 
                 </div>
                 
 
                 <div className="d">
-                  <label htmlFor="">Phone</label>
+                  <label htmlFor="" className='dddd'>Phone</label>
 
 
                   <label htmlFor="" className='ddd'>Address</label>
@@ -42,23 +67,23 @@ const Form = () => {
 
                 <div className="diiii">
                 
-                 <input type="text" placeholder='Enter Phone Number' /> 
+                 <input type="text" name='phone' placeholder='Enter Phone Number'  required  /> 
 
                  <br /> <br />
-                 <input type="text" placeholder='Enter Addrress' /> 
+                 <input type="text" name='address' placeholder='Enter Addrress' required  /> 
                 </div>
                 
                
                 <div className="mess">
                   <label htmlFor=""> Your Message</label> <br />  <br />
-                  <input type="textArea"   className='message'/>
+                  <input type="textArea" name='message'   className='message' required />
                 </div>
 
                 <h4>
                   By submitting, you agree to our <span>Privacy Policy</span>
                 </h4>
 
-                <button>
+                <button type='submit'>
                   Submit
                 </button>
 
