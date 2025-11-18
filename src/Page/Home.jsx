@@ -41,7 +41,7 @@ const Home = () => {
                      <img src={phone} alt="" />
                    </div>
 
-                    <Link to='/product'><button>Click to shop</button> </Link>
+                    <Link to='/log'><button>Click to shop</button> </Link>
                 </div>
 
                  <div className="cardd">
@@ -52,7 +52,7 @@ const Home = () => {
                      <img src={laptop} alt="" />
                    </div>
 
-                     <Link to='/product2'><button>Click to shop</button></Link>
+                     <Link to='/log'><button>Click to shop</button></Link>
                 </div>
 
 
@@ -64,7 +64,7 @@ const Home = () => {
                      <img src={smart} alt="" />
                    </div>
 
-                    <Link to='/product3'><button>Click to shop</button></Link>
+                    <Link to='/log'><button>Click to shop</button></Link>
                 </div>
 
                  
