@@ -13,7 +13,7 @@
         border-radius: 5px;
         padding: 4px 10px;
         cursor: pointer;
-        font-size:10px'
+        font-size:10px;
 
             
     }
@@ -21,8 +21,7 @@
 
 .vin{
     width: 100%;
-    /* margin-left: 2%;
-    margin-right: 2%; */
+   
    
 }
 
