@@ -3,16 +3,10 @@
     text-align:end;
     font-family:Arial, Helvetica, sans-serif;
 
-    span{
-         color: black;
-         margin-left: 100px; 
-         font-size:24px;
-        margin-top:10px;
-    }
+    
 
     button{
-    
-         margin-left: 10px;
+        margin-left: 10px;
         background: black;
         border: 1px solid white;
         color: white;
