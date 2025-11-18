@@ -12,14 +12,14 @@
 
     button{
     
-                margin-left: 10px;
-                background: black;
-                border: 1px solid white;
-                color: white;
-                border-radius: 5px;
-                padding: 4px 10px;
-                cursor: pointer;
-                font-size:10px'
+         margin-left: 10px;
+        background: black;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+        padding: 4px 10px;
+        cursor: pointer;
+        font-size:10px'
 
             
     }
