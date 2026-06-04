@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     background-color: lightblue;
     padding-bottom: 50px;
+    /* width: 90%; */
 
     img{
     max-width: 40%;
@@ -194,6 +195,7 @@
         flex-direction: column;
         padding-left:5px;
         padding-right: 5px;
+        width: 97%;
     }
 
    .formm{
@@ -294,14 +296,14 @@
 
 
 
-@media(max-width:500px){
+@media(max-width:600px){
     .container{
         flex-direction: column;
 
         img{
-            max-width:4000px;
-            padding-left: 5px;
-            height: 70vh;
+            max-width:300px;
+            /* padding-left: 5px; */
+            height: 90vh;
         }
     }
     .contacttt-h1{
@@ -324,7 +326,7 @@
          flex-direction: column;
 
         img{
-            max-width:420px;
+            max-width:400px;
             padding-right: 8px;
             height: 50vh;
         }

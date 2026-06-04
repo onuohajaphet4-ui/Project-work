@@ -148,11 +148,11 @@ export default function ProductDetails() {
 
         <div className="decard">
           <h1>
-            Delevey Informaton :
+            Delivery Informaton :
           </h1>
 
           <ul>
-            <li>Delivey Within main branch state :1-2 days</li>
+            <li>Delivery Within main branch state :1-2 days</li>
             <li>Out side Main branch state: 2-5days</li>
             <li>Payment on delivery: Not available</li>
             <li>Delivery fee: 10$ -30$ deppending on the location</li>
